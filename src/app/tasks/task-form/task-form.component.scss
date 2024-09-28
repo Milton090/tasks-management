@@ -1,0 +1,35 @@
+.task-form {
+   border: 1px solid #ccc;
+   padding: 15px;
+   width: 400px;
+}
+
+.task-input,
+.person-section,
+.skill-section {
+   margin-bottom: 10px;
+}
+
+button {
+   margin-right: 5px;
+   margin-top: 5px;
+}
+
+.custom-dialog-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-height: 80vh;
+   overflow: auto;
+}
+
+
+.mat-dialog-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.mat-icon-button {
+   margin-left: auto;
+}

@@ -1,0 +1,6 @@
+services:
+  app:
+    build: ./
+    restart: always
+    ports:
+      - "7700:80"
