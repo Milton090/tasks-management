@@ -4,6 +4,8 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 Para el despliegue de la aplicación se utilizó Docker, para la creación de la imagen y el contenedor.
 
+**Video explicativo:** Para ver el video explicativo haz clic [aqui](https://www.youtube.com/watch?v=ah7520J54dc&ab_channel=Milton)
+
 ## Pre requisitos
 Asegurese de tener instalado Docker, puede instalarlo desde [aqui](https://www.docker.com/products/docker-desktop)
 
