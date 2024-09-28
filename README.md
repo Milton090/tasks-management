@@ -1,27 +1,31 @@
 # Tasks Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
-## Development server
+Para el despliegue de la aplicación se utilizó Docker, para la creación de la imagen y el contenedor.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Pre requisitos
+Asegurese de tener instalado Docker, puede instalarlo desde [aqui](https://www.docker.com/products/docker-desktop)
 
-## Code scaffolding
+## Despliegue
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para desplegar la aplicación, primero debe clonar el repositorio, luego debe ejecutar el siguiente comando en la raíz del proyecto:
 
-## Build
+```bash
+docker compose up
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Este comando creará la imagen de la aplicación y el contenedor, luego la aplicación estará disponible en [http://localhost:7700/](http://localhost:7700/tasks)
 
-## Running unit tests
+El puerto `7700` es el puerto por defecto, si desea cambiarlo, puede hacerlo en el archivo `docker-compose.yml` en la raíz del proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Desarrollo
 
-## Running end-to-end tests
+Para ejecutar la aplicación en modo desarrollo, ejecute el siguiente comando en la raíz del proyecto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+>**Nota:** Esta opcion no es recomendada debido posibles problemas de versiones de Node y Angular dependiendo de la configuración de su máquina. Por lo que se recomienda el uso de Docker.
